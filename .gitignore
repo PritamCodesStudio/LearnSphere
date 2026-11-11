@@ -1,0 +1,18 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.vscode/
+.idea/
+
+# Local server logs / test artefacts
+*.log
+_qa.html
+_crawl.py
+
+# Thumbnail source images (keep the generated WebPs, not your originals)
+_thumbs/
+
+# Never commit browser data dumps or archives of this demo
+*.zip
