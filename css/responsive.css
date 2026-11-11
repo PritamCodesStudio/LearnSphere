@@ -1,0 +1,901 @@
+/* =========================================================
+   LearnSphere Academy — Responsive rules
+   Breakpoints: 1180 / 1024 / 900 / 768 / 640 / 480
+   ========================================================= */
+
+@media (max-width: 1180px) {
+  .nav-list {
+    gap: 0.1rem;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+    padding-inline: 0.12rem;
+  }
+
+  .hero__grid {
+    gap: 3rem;
+  }
+
+  .hero__media {
+    min-height: 500px;
+  }
+
+  .hero__frame {
+    min-height: 480px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .primary-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: grid;
+    place-items: center;
+  }
+
+  .header-actions {
+    margin-left: auto;
+  }
+
+  .header-actions .header-login {
+    display: none;
+  }
+
+  .hero__grid {
+    grid-template-columns: 1fr 0.92fr;
+    gap: 2.25rem;
+  }
+
+  .hero__media {
+    min-height: 470px;
+    padding: 0 1rem 1rem 0;
+  }
+
+  .hero__frame {
+    min-height: 450px;
+  }
+
+  .about-preview__grid,
+  .about-story,
+  .contact-grid,
+  .review-form-wrap {
+    gap: 2.5rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .instructor-page-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .method-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reviews-layout {
+    grid-template-columns: 280px 1fr;
+  }
+
+  .detail-layout {
+    grid-template-columns: minmax(0, 1fr) 320px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero__content {
+    max-width: 640px;
+  }
+
+  .hero h1 {
+    max-width: 15ch;
+  }
+
+  .hero__media {
+    max-width: 580px;
+    margin-inline: auto;
+    width: 100%;
+    min-height: 520px;
+    padding: 0 1.5rem 1.25rem 0;
+  }
+
+  .hero__frame {
+    min-height: 500px;
+  }
+
+  .about-preview__grid,
+  .about-story {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-media {
+    max-width: 560px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  .about-story__media {
+    max-width: 640px;
+  }
+
+  .journey-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .instructor-grid,
+  .instructor-page-grid,
+  .course-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 0;
+  }
+
+  .stat:nth-child(3) {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .faq-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .faq-aside {
+    position: static;
+  }
+
+  .catalog {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    position: static;
+    display: none;
+    margin-bottom: 1.25rem;
+  }
+
+  .filters.is-open {
+    display: block;
+  }
+
+  .filters-toggle {
+    display: inline-flex;
+  }
+
+  .detail-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .detail-aside {
+    position: static;
+    max-width: 520px;
+  }
+
+  .purchase-card {
+    box-shadow: var(--shadow-sm);
+  }
+
+  .reviews-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .review-summary {
+    position: static;
+  }
+
+  .review-form-wrap {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .map-card {
+    grid-column: 1 / -1;
+  }
+
+  .legal-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .legal-toc {
+    position: static;
+  }
+
+  .legal-toc ol {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .legal-body {
+    max-width: none;
+  }
+
+  .auth-layout {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+  }
+
+  .auth-aside {
+    display: none;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .week-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .approach-band {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .page-hero--split .page-hero__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.75rem;
+  }
+
+  .page-hero__aside {
+    width: 100%;
+  }
+
+  .pillar-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-band {
+    padding: 2rem;
+  }
+
+  .detail-title {
+    max-width: none;
+  }
+
+  .testimonial-card {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .testimonial-card__mark {
+    display: none;
+  }
+
+  .section-head--split {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .section-head__link {
+    padding-bottom: 0.25rem;
+  }
+
+  .stats-band__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-space: clamp(3.5rem, 8vw, 5rem);
+    --gutter: 1.25rem;
+  }
+
+  body {
+    font-size: 0.97rem;
+  }
+
+  .header-actions .btn--primary {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 2rem;
+  }
+
+  .hero h1 {
+    max-width: none;
+    font-size: clamp(2.45rem, 9vw, 3.4rem);
+  }
+
+  .hero__lead {
+    font-size: var(--text-base);
+  }
+
+  .hero__metrics {
+    gap: 1rem 1.75rem;
+  }
+
+  .hero__media {
+    min-height: 440px;
+    padding: 0 0.75rem 0.75rem 0;
+  }
+
+  .hero__frame {
+    min-height: 420px;
+    border-radius: 20px;
+  }
+
+  .hero-continue {
+    left: -0.6rem;
+    bottom: 1.5rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.85rem, 6vw, 2.4rem);
+  }
+
+  .about-media__card {
+    right: 0.4rem;
+    bottom: 2rem;
+    max-width: 185px;
+    padding: 0.9rem 1rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    padding: 1.35rem;
+  }
+
+  .journey-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-step {
+    padding: 1.5rem;
+  }
+
+  .course-grid,
+  .instructor-grid,
+  .instructor-page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-grid.is-list .course-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .course-grid.is-list .course-card__media {
+    min-height: 0;
+    aspect-ratio: 16 / 9.4;
+  }
+
+  .course-grid.is-list .course-card__body {
+    padding-bottom: 1rem;
+  }
+
+  .course-grid.is-list .course-card__footer {
+    margin-top: 0;
+    padding: 0.9rem 1.2rem 1.15rem;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .course-grid.is-list .course-card__title {
+    font-size: 1.1rem;
+  }
+
+  .instructor-card__media {
+    aspect-ratio: 4 / 3.4;
+  }
+
+  .instructor-card__socials {
+    opacity: 1;
+    transform: none;
+  }
+
+  .testimonial-panel {
+    border-radius: 20px;
+    padding: 1rem;
+  }
+
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+
+  .testimonial-card__quote {
+    font-size: 1.1rem;
+  }
+
+  .stats-band {
+    border-radius: 20px;
+  }
+
+  .stat:nth-child(3) {
+    border-left: 1px solid rgba(255, 255, 255, 0.14);
+    padding-left: clamp(0.9rem, 2vw, 1.75rem);
+  }
+
+  .stat:nth-child(odd) {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .cta-panel {
+    border-radius: 20px;
+  }
+
+  .cta-panel__actions .btn {
+    width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom__links {
+    gap: 0.85rem;
+  }
+
+  .form-grid-2,
+  .form-row,
+  .contact-info,
+  .outcome-grid,
+  .reviews-grid,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row .form-field + .form-field {
+    margin-top: 1rem;
+  }
+
+  .reviews-main__head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .review-summary .rating-bars {
+    max-width: 360px;
+  }
+
+  .method-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item {
+    grid-template-columns: 44px 1fr;
+    gap: 1rem;
+  }
+
+  .timeline::before {
+    left: 21px;
+  }
+
+  .timeline-item__marker {
+    width: 44px;
+    height: 44px;
+  }
+
+  .timeline-item__marker .icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .legal-toc ol {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-tools {
+    width: 100%;
+  }
+
+  .catalog-tools .search-box {
+    max-width: none;
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .catalog-tools .select-wrap {
+    flex: 1;
+  }
+
+  .catalog-tools .select-control {
+    width: 100%;
+  }
+
+  .detail-aside {
+    max-width: none;
+  }
+
+  .instructor-spotlight {
+    flex-direction: column;
+  }
+
+  .instructor-spotlight__media {
+    width: 100%;
+    height: 220px;
+    object-position: center 20%;
+  }
+
+  .instructor-spotlight__socials {
+    margin-left: auto;
+  }
+
+  .module__meta span:first-child {
+    display: none;
+  }
+
+  .purchase-card {
+    padding: 1.25rem;
+  }
+
+  .legal-body h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-inner {
+    gap: 0.75rem;
+  }
+
+  .brand-name {
+    font-size: 0.98rem;
+  }
+
+  .brand-mark {
+    width: 33px;
+    height: 33px;
+  }
+
+  .menu-toggle {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero__proof {
+    gap: 0.65rem;
+  }
+
+  .hero__metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+
+  .hero-metric {
+    min-width: 0;
+  }
+
+  .hero-metric__value {
+    font-size: 1.25rem;
+  }
+
+  /* Keep the continue card fully inside the viewport on small screens. */
+  .hero-continue {
+    left: 0;
+    bottom: 1.25rem;
+    width: min(280px, calc(100% - 1rem));
+  }
+
+  .about-media__card {
+    right: 0;
+    bottom: 1.5rem;
+  }
+
+  .section-head {
+    margin-bottom: 2rem;
+  }
+
+  .testimonial-card__footer {
+    flex-wrap: wrap;
+  }
+
+  .testimonial-controls {
+    align-items: flex-start;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .stat,
+  .stat:nth-child(3),
+  .stat:nth-child(odd) {
+    border-left: 0;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  .stat:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .stat:last-child {
+    padding-bottom: 0;
+  }
+
+  .cta-panel h2 {
+    font-size: 2rem;
+  }
+
+  .page-hero {
+    padding-top: 2.5rem;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2rem, 9vw, 2.7rem);
+  }
+
+  .page-hero__lead {
+    font-size: var(--text-base);
+  }
+
+  .detail-title {
+    font-size: clamp(1.75rem, 7vw, 2.2rem);
+  }
+
+  .course-banner {
+    min-height: 210px;
+  }
+
+  .course-banner__glyph {
+    width: 62px;
+    height: 62px;
+  }
+
+  .outcome-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-nav {
+    gap: 0.1rem;
+  }
+
+  .detail-nav a {
+    padding: 0.35rem 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .instructor-card__socials {
+    opacity: 1;
+  }
+
+  .auth-card {
+    padding: 1.35rem;
+  }
+
+  .auth-form .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-form .form-row .form-field + .form-field {
+    margin-top: 1rem;
+  }
+
+  .modal-head,
+  .modal-body,
+  .modal-foot {
+    padding-inline: 1.1rem;
+  }
+
+  .modal-foot__actions {
+    width: 100%;
+  }
+
+  .modal-foot__actions .btn {
+    flex: 1;
+  }
+
+  .page-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page-cta__actions {
+    width: 100%;
+  }
+
+  .page-cta__actions .btn {
+    flex: 1;
+  }
+
+  .notfound__code {
+    font-size: clamp(5.5rem, 26vw, 8rem);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --gutter: 1.1rem;
+  }
+
+  .theme-toggle {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* Keep the dots and arrows on one line on narrow phones; wrap if
+     the content ever exceeds the space (WCAG touch target stays 24px). */
+  .testimonial-controls {
+    flex-wrap: wrap;
+    row-gap: 0.75rem;
+  }
+
+  .testimonial-dots {
+    gap: 0.2rem;
+  }
+
+  .testimonial-dot {
+    width: 24px;
+    height: 24px;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .hero__media {
+    min-height: 390px;
+    padding: 0;
+  }
+
+  .hero__frame {
+    min-height: 380px;
+    border-radius: 20px;
+  }
+
+  .hero__frame img {
+    object-position: center 30%;
+  }
+
+  .hero-continue {
+    left: 0;
+    bottom: 0.75rem;
+    width: min(280px, calc(100% - 0.5rem));
+  }
+
+  .about-media__card strong {
+    font-size: 1.25rem;
+  }
+
+  .hero__metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-metric:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .course-card__footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .course-card__actions {
+    width: 100%;
+  }
+
+  .course-card__actions .btn {
+    flex: 1;
+  }
+
+  .testimonial-card {
+    padding: 1.2rem;
+  }
+
+  .testimonial-card__quote {
+    font-size: 1rem;
+  }
+
+  .stats-band {
+    padding: 1.5rem;
+  }
+
+  .instructor-toolbar {
+    align-items: stretch;
+  }
+
+  .search-box {
+    max-width: none;
+    width: 100%;
+  }
+
+  .spec-chips {
+    gap: 0.35rem;
+  }
+
+  .spec-chip {
+    font-size: 0.68rem;
+    padding: 0.38rem 0.65rem;
+  }
+
+  .auth-card {
+    padding: 1.2rem;
+  }
+
+  .auth-card__head h1 {
+    font-size: 1.7rem;
+  }
+
+  .contact-form-card {
+    padding: 1.2rem;
+  }
+
+  .page-hero__aside {
+    gap: 0.4rem;
+  }
+
+  .purchase-card__actions .btn {
+    font-size: 0.8rem;
+  }
+
+  .footer-newsletter__row {
+    flex-direction: column;
+  }
+
+  .footer-newsletter .btn {
+    width: 100%;
+  }
+
+  .modal-banner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* ---------- Touch screens ----------
+   Suppress hover-only transforms so icons do not stay "stuck"
+   in a nudged state after being tapped. */
+@media (hover: none) {
+  .btn:hover .icon--arrow,
+  .text-link:hover .icon {
+    transform: none !important;
+  }
+}

@@ -1,0 +1,160 @@
+/* =========================================================
+   LearnSphere Academy — Design Tokens
+   All colours, type, spacing, radii and motion live here.
+   Change these values to re-theme the entire website.
+
+   Direction: "Study Desk" — warm paper neutrals, quiet ink
+   text, flat surfaces, and one violet accent used sparingly
+   like a tutor's pen (progress, selection, key figures).
+   ========================================================= */
+
+:root {
+  /* --- Core palette (light) --- */
+  --color-bg: #f8f7f4;
+  --color-bg-alt: #f1efe9;
+  --color-surface: #ffffff;
+  --color-surface-alt: #fbfaf8;
+  --color-text: #262338;
+  --color-text-secondary: #57536a;
+  --color-text-muted: #6e6a82;
+  --color-text-strong: #262338;
+  --color-accent: #6d4ad6;
+  --color-accent-strong: #5a3cc4;
+  --color-accent-secondary: #a78bfa;
+  --color-accent-soft: #ece7fa;
+  --color-border: #e9e6de;
+  --color-border-strong: #d9d5cb;
+  --color-button: #262338;
+  --color-button-text: #ffffff;
+  --color-button-hover: #3d3952;
+
+  /* --- Ink panels (flat in both themes) --- */
+  --color-panel: #262338;
+  --color-panel-accent: #c4b5fd;
+
+  /* --- Semantic --- */
+  --color-success: #3f7d62;
+  --color-success-soft: #e7f2ec;
+  --color-danger: #b4544b;
+  --color-danger-soft: #f8eae8;
+  --color-warning: #9a6f2c;
+  --color-warning-soft: #f7efdf;
+  --color-info: #4f6b8f;
+  --color-info-soft: #eaf0f7;
+
+
+  /* --- Typography --- */
+  --font-display: "Plus Jakarta Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-body: "Plus Jakarta Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.0625rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: clamp(1.75rem, 1.2rem + 1.1vw, 2.25rem);
+  --text-4xl: clamp(2.15rem, 1.45rem + 2.4vw, 3.4rem);
+  --text-5xl: clamp(2.75rem, 1.6rem + 4.4vw, 4.75rem);
+  --leading-tight: 1.08;
+  --leading-snug: 1.3;
+  --leading-normal: 1.7;
+
+  /* --- Spacing (4px rhythm) --- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 2rem;
+  --space-8: 2.5rem;
+  --space-9: 3rem;
+  --space-10: 4rem;
+  --space-11: 5rem;
+  --space-12: 6.5rem;
+  --section-space: clamp(5rem, 8vw, 7rem);
+
+  /* --- Layout --- */
+  --container: 1200px;
+  --container-wide: 1320px;
+  --container-narrow: 880px;
+  --gutter: clamp(1.15rem, 4vw, 2.5rem);
+  --header-h: 64px;
+
+  /* --- Radii (controls 8 / cards 14 / panels 20) --- */
+  --radius-xs: 8px;
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-pill: 999px;
+
+  /* --- Shadows (light theme only: two small neutral levels;
+      the dark theme builds depth from surface steps and
+      hairline borders instead) --- */
+  --shadow-xs: 0 1px 2px rgba(38, 35, 56, 0.05);
+  --shadow-sm: 0 2px 8px rgba(38, 35, 56, 0.06);
+  --shadow-md: 0 2px 8px rgba(38, 35, 56, 0.06);
+  --shadow-lg: 0 2px 8px rgba(38, 35, 56, 0.06);
+
+  /* --- Motion (one easing; three durations) --- */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 150ms;
+  --dur: 250ms;
+  --dur-slow: 400ms;
+
+  /* --- Effects --- */
+  --ring: 0 0 0 3px rgba(109, 74, 214, 0.35);
+  --header-bg: rgba(248, 247, 244, 0.86);
+  --selection-bg: #ded5f6;
+  --selection-text: #262338;
+  --scrollbar-thumb: #d9d4c8;
+  --scrollbar-track: #f1efe9;
+}
+
+[data-theme="dark"] {
+  --color-bg: #17151f;
+  --color-bg-alt: #1e1b28;
+  --color-surface: #211e2b;
+  --color-surface-alt: #1b1826;
+  --color-text: #f5f3fa;
+  --color-text-secondary: #b5b0c4;
+  --color-text-muted: #8f8aa3;
+  --color-text-strong: #f5f3fa;
+  --color-accent: #a78bfa;
+  --color-accent-strong: #bca5ff;
+  --color-accent-secondary: #c4b5fd;
+  --color-accent-soft: rgba(167, 139, 250, 0.14);
+  --color-border: #2c2836;
+  --color-border-strong: #3b3749;
+  --color-button: #f5f3fa;
+  --color-button-text: #14121c;
+  --color-button-hover: #ffffff;
+
+  --color-panel: #14121c;
+  --color-panel-accent: #c4b5fd;
+
+  --color-success: #7fc2a2;
+  --color-success-soft: rgba(78, 151, 117, 0.14);
+  --color-danger: #e19a93;
+  --color-danger-soft: rgba(180, 84, 75, 0.16);
+  --color-warning: #e0b872;
+  --color-warning-soft: rgba(154, 111, 44, 0.18);
+  --color-info: #9db6d6;
+  --color-info-soft: rgba(79, 107, 143, 0.18);
+
+
+  --shadow-xs: none;
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+
+  --ring: 0 0 0 3px rgba(167, 139, 250, 0.4);
+  --header-bg: rgba(23, 21, 31, 0.86);
+  --selection-bg: #4c3f85;
+  --selection-text: #ffffff;
+  --scrollbar-thumb: #3b3749;
+  --scrollbar-track: #1e1b28;
+}

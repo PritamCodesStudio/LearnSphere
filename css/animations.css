@@ -1,0 +1,152 @@
+/* =========================================================
+   LearnSphere Academy — Motion & animation
+   One easing, three durations (150 / 250 / 400ms).
+   Reveals are 240ms with 60ms stagger steps.
+   ========================================================= */
+
+/* Scroll reveals */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 240ms var(--ease-out),
+    transform 240ms var(--ease-out);
+}
+
+/* Hint the compositor only while a reveal is still pending; once the
+   element is visible the layer is released instead of lingering for
+   the lifetime of the page (keeps frame times low on high-refresh
+   and low-power mobile displays). */
+.js .reveal:not(.is-visible) {
+  will-change: opacity, transform;
+}
+
+.js .reveal--left {
+  transform: translateX(-18px);
+}
+
+.js .reveal--right {
+  transform: translateX(18px);
+}
+
+.js .reveal--scale {
+  transform: scale(0.985);
+}
+
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}
+
+.js .reveal[data-delay="1"] {
+  transition-delay: 60ms;
+}
+
+.js .reveal[data-delay="2"] {
+  transition-delay: 120ms;
+}
+
+.js .reveal[data-delay="3"] {
+  transition-delay: 180ms;
+}
+
+.js .reveal[data-delay="4"] {
+  transition-delay: 240ms;
+}
+
+.js .reveal[data-delay="5"] {
+  transition-delay: 300ms;
+}
+
+/* Dialog */
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.975);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateX(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes toastOut {
+  to {
+    opacity: 0;
+    transform: translateX(16px);
+  }
+}
+
+/* Skeleton shimmer */
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Spinner (used by demo login / async actions) */
+.spinner {
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: spin 700ms linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.btn.is-loading {
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+/* Subtle accent underline on hover */
+.text-accent-underline {
+  background-image: linear-gradient(var(--color-accent-secondary), var(--color-accent-secondary));
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size var(--dur) var(--ease);
+}
+
+.text-accent-underline:hover {
+  background-size: 100% 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
