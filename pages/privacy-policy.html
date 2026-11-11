@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — LearnSphere Academy</title>
+  <meta name="description" content="Privacy information for the LearnSphere Academy demonstration site, including what is stored in your browser and what is never collected.">
+  <meta name="theme-color" content="#f8f7f4">
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <script>
+    (function(){try{var s=localStorage.getItem('learnsphere.theme');var d=window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.setAttribute('data-theme',s==='dark'||s==='light'?s:(d?'dark':'light'));document.documentElement.classList.add('js');}catch(e){document.documentElement.classList.add('js');}})();
+  </script>
+</head>
+<body data-page="privacy" data-root="../">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div class="page-hero__content">
+          <span class="eyebrow">Privacy</span>
+          <h1>A short, honest privacy notice for a demo site.</h1>
+          <p class="page-hero__lead">LearnSphere Academy is a frontend demonstration. It has no backend, no analytics and no user database. This page explains exactly what stays in your browser.</p>
+          <p class="demo-note"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg><span>This is sample policy text for a portfolio project, not legal advice for a real education business.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="legal-layout">
+          <nav class="legal-toc" aria-label="On this page">
+            <h2>On this page</h2>
+            <ol>
+              <li><a href="#scope">Scope of this notice</a></li>
+              <li><a href="#stored">What is stored in your browser</a></li>
+              <li><a href="#not-collected">What is not collected</a></li>
+              <li><a href="#use">How demo data is used</a></li>
+              <li><a href="#cookies">Cookies and third parties</a></li>
+              <li><a href="#choices">Your choices and control</a></li>
+              <li><a href="#security">Security limitations</a></li>
+              <li><a href="#children">Children</a></li>
+              <li><a href="#changes">Changes to this notice</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ol>
+          </nav>
+
+          <div class="legal-body">
+            <p class="legal-meta"><strong>Last updated:</strong> 9 November 2026 · <strong>Status:</strong> demonstration copy · <strong>Applies to:</strong> the LearnSphere Academy static website</p>
+
+            <section id="scope">
+              <h2>1. Scope of this notice</h2>
+              <p>This notice describes the data handling of the LearnSphere Academy demonstration website as delivered in this project folder. It is a static HTML, CSS and JavaScript site. There is no server-side application, account system, payment processor or email service connected to it.</p>
+              <p>If you adapt this project into a real service, you will need a new privacy notice that reflects your actual data collection, legal basis and retention practices.</p>
+            </section>
+
+            <section id="stored">
+              <h2>2. What is stored in your browser</h2>
+              <p>The demo uses your browser's <code>localStorage</code> (and occasionally <code>sessionStorage</code>) to make the interface feel continuous. The following demo keys may be created:</p>
+              <ul>
+                <li><strong>learnsphere.theme</strong> — your light or dark theme preference.</li>
+                <li><strong>learnsphere.users</strong> — demo account names, email addresses and a browser-generated password hash. Never a raw password.</li>
+                <li><strong>learnsphere.session</strong> — the current demo session, used to personalise the header and dashboard.</li>
+                <li><strong>learnsphere.saved</strong> and <strong>learnsphere.favorites</strong> — course slugs you have saved or favourited.</li>
+                <li><strong>learnsphere.enrollments</strong> and <strong>learnsphere.progress</strong> — sample enrollment and lesson-completion state.</li>
+                <li><strong>learnsphere.activity</strong> — a short local list of demo actions for the dashboard.</li>
+                <li><strong>learnsphere.messages</strong>, <strong>learnsphere.reviews</strong> and <strong>learnsphere.newsletter</strong> — anything you type into the demo forms.</li>
+                <li><strong>learnsphere.demoSeeded</strong> and view preferences — small flags used to set up the demo.</li>
+              </ul>
+              <p>These values stay on your device. They are readable by scripts running on this site and can be removed by clearing site data in your browser.</p>
+            </section>
+
+            <section id="not-collected">
+              <h2>3. What is not collected</h2>
+              <ul>
+                <li>No real account is created and no identity is verified.</li>
+                <li>No payment details are requested or processed.</li>
+                <li>No analytics, advertising or session-recording tools are included.</li>
+                <li>No message, review or newsletter entry is sent to a server or inbox.</li>
+                <li>No precise location, device fingerprint or contact list is accessed.</li>
+              </ul>
+              <p>Because there is no backend, the project owner cannot see your local demo activity. That also means there is no one to recover a lost demo password.</p>
+            </section>
+
+            <section id="use">
+              <h2>4. How demo data is used</h2>
+              <p>Local data is used only to demonstrate interface behaviour: remembering a theme, showing saved courses, calculating sample progress, validating forms and rendering the dashboard. It is not used for profiling, marketing or any automated decision.</p>
+            </section>
+
+            <section id="cookies">
+              <h2>5. Cookies and third parties</h2>
+              <p>This project does not set cookies of its own. It uses browser storage, which is a different mechanism.</p>
+              <p>The pages request fonts from Google Fonts. That request may share standard technical information, such as your IP address and browser details, with Google. If you need a fully self-contained deployment, you can remove the Google Fonts links and rely on the system font fallbacks defined in the stylesheet.</p>
+              <p>Social and external links in the footer point to placeholder destinations and open in a new tab. Their privacy practices are not controlled by this project.</p>
+            </section>
+
+            <section id="choices">
+              <h2>6. Your choices and control</h2>
+              <p>You can clear every demo value by using your browser's “clear site data” or “clear browsing data” option for this site. You can also use the reset control in the demo dashboard. Clearing data removes local accounts, progress, saved courses, messages and reviews.</p>
+              <p>Do not enter real personal information, real passwords or sensitive details into any demo form.</p>
+            </section>
+
+            <section id="security">
+              <h2>7. Security limitations</h2>
+              <p>The demo hashes passwords with the Web Crypto API when available, with a non-cryptographic fallback under some local file conditions. This reduces the chance of a raw password being stored, but it is not secure authentication. Local storage can be inspected, altered or deleted by anyone with access to the browser profile.</p>
+              <p>Never reuse a real password. A production platform would require a server, secure password hashing, rate limiting, email verification, session protection and a formal security review.</p>
+            </section>
+
+            <section id="children">
+              <h2>8. Children</h2>
+              <p>This demonstration is intended for a general audience interested in frontend design. It does not knowingly collect information from children. Because no data leaves the browser, there is no server-side record to delete.</p>
+            </section>
+
+            <section id="changes">
+              <h2>9. Changes to this notice</h2>
+              <p>As a portfolio project, this notice may be updated when the demo changes. The date at the top of the page indicates the current version. Material changes to a real service would require appropriate notice and, where necessary, consent.</p>
+            </section>
+
+            <section id="contact">
+              <h2>10. Contact</h2>
+              <p>Questions about this demo can be sent through the <a href="../pages/contact.html">contact form</a>. Remember that the form stores your message locally and does not deliver it. The placeholder address <a href="mailto:hello@learnsphere.example">hello@learnsphere.example</a> is for demonstration only.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../js/icons.js"></script>
+  <script src="../js/storage.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/forms.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

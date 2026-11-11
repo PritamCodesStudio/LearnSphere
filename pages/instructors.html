@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instructors — LearnSphere Academy</title>
+  <meta name="description" content="Meet eight sample instructor profiles for the LearnSphere Academy demonstration. Teaching backgrounds and credentials shown here are illustrative content.">
+  <meta name="theme-color" content="#f8f7f4">
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <script>
+    (function(){try{var s=localStorage.getItem('learnsphere.theme');var d=window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.setAttribute('data-theme',s==='dark'||s==='light'?s:(d?'dark':'light'));document.documentElement.classList.add('js');}catch(e){document.documentElement.classList.add('js');}})();
+  </script>
+</head>
+<body data-page="instructors" data-root="../">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div class="page-hero__content">
+          <span class="eyebrow">The teaching team</span>
+          <h1>People who care about how ideas land.</h1>
+          <p class="page-hero__lead">Eight sample instructor profiles built to show how a teaching team could be presented: practical backgrounds, clear specialisms and a direct connection to the courses they support.</p>
+          <p class="demo-note"><svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg><span>Every profile, qualification and experience claim on this page is illustrative sample content. These are not real instructors.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="instructor-toolbar">
+          <div class="spec-chips" role="group" aria-label="Filter by specialisation">
+            <button class="spec-chip" type="button" data-specialization-filter="all">All profiles</button>
+            <button class="spec-chip" type="button" data-specialization-filter="Web Development">Web Development</button>
+            <button class="spec-chip" type="button" data-specialization-filter="Python">Python</button>
+            <button class="spec-chip" type="button" data-specialization-filter="Data Structures">Data Structures</button>
+            <button class="spec-chip" type="button" data-specialization-filter="Systems Programming">Systems Programming</button>
+            <button class="spec-chip" type="button" data-specialization-filter="Data &amp; Databases">Data &amp; Databases</button>
+            <button class="spec-chip" type="button" data-specialization-filter="AI &amp; Machine Learning">AI &amp; Machine Learning</button>
+            <button class="spec-chip" type="button" data-specialization-filter="Design &amp; Motion">Design &amp; Motion</button>
+            <button class="spec-chip" type="button" data-specialization-filter="Foundations">Foundations</button>
+          </div>
+          <label class="search-box" for="instructor-search">
+            <svg class="icon" aria-hidden="true"><use href="#i-search"></use></svg>
+            <input class="input" id="instructor-search" type="search" placeholder="Search by name or expertise" autocomplete="off" aria-label="Search instructors">
+          </label>
+        </div>
+
+        <p class="catalog-count" id="instructor-count" style="margin-bottom:1.25rem" aria-live="polite">Loading sample instructor profiles…</p>
+
+        <h2 class="visually-hidden">Instructor profiles</h2>
+        <div class="instructor-page-grid" id="instructor-grid" aria-live="polite"></div>
+
+        <div class="empty-state" id="instructor-empty" hidden>
+          <span class="empty-state__icon" aria-hidden="true"><svg class="icon"><use href="#i-users"></use></svg></span>
+          <h3>No profiles match that search</h3>
+          <p>Try another specialisation or use a shorter search term to see all eight sample profiles.</p>
+        </div>
+
+        <p class="demo-note"><svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg><span>Instructor portraits are illustrative stock images. Social links are placeholder destinations, not real profiles.</span></p>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">How teaching is framed</span>
+          <h2 class="section-title">Subject depth, explained simply</h2>
+          <p class="section-lead">In a real programme, this team would be supported by onboarding, peer review and clear expectations for learner feedback.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-card__icon" aria-hidden="true"><svg class="icon"><use href="#i-compass"></use></svg></span>
+            <h3>Practice-led sessions</h3>
+            <p>Teaching starts from a realistic task and works back to the concept, so the theory has somewhere to live.</p>
+          </article>
+          <article class="feature-card reveal" data-delay="1">
+            <span class="feature-card__icon" aria-hidden="true"><svg class="icon"><use href="#i-message"></use></svg></span>
+            <h3>Feedback with reasons</h3>
+            <p>Comments should explain the next improvement, not just score the work. This is a design principle, not a delivered service.</p>
+          </article>
+          <article class="feature-card reveal" data-delay="2">
+            <span class="feature-card__icon" aria-hidden="true"><svg class="icon"><use href="#i-refresh"></use></svg></span>
+            <h3>Material kept current</h3>
+            <p>Course notes would carry review dates and version notes so learners can see when something changed.</p>
+          </article>
+          <article class="feature-card reveal" data-delay="3">
+            <span class="feature-card__icon" aria-hidden="true"><svg class="icon"><use href="#i-users"></use></svg></span>
+            <h3>Respect for beginners</h3>
+            <p>No question is treated as obvious. Explanations assume curiosity, not prior jargon.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="page-cta">
+          <div>
+            <h2>See the courses they would teach</h2>
+            <p>Each sample profile is linked to a course in the twelve-course demo catalogue.</p>
+          </div>
+          <div class="page-cta__actions">
+            <a class="btn btn--primary" href="../pages/courses.html">Browse courses</a>
+            <a class="btn btn--ghost" href="../pages/experience.html">How learning works</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../js/icons.js"></script>
+  <script src="../js/storage.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/instructors.js"></script>
+  <script src="../js/forms.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reviews — LearnSphere Academy</title>
+  <meta name="description" content="Read sample learner reviews for the LearnSphere Academy demo. Every review is illustrative, clearly labelled and stored or written as demonstration content.">
+  <meta name="theme-color" content="#f8f7f4">
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <script>
+    (function(){try{var s=localStorage.getItem('learnsphere.theme');var d=window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.setAttribute('data-theme',s==='dark'||s==='light'?s:(d?'dark':'light'));document.documentElement.classList.add('js');}catch(e){document.documentElement.classList.add('js');}})();
+  </script>
+</head>
+<body data-page="reviews" data-root="../">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div class="page-hero__content">
+          <span class="eyebrow">Sample learner reviews</span>
+          <h1>Honest-sounding stories, clearly labelled as samples.</h1>
+          <p class="page-hero__lead">A review page should help you understand what learning feels like, not manufacture trust. Everything here is demonstration content. No review is verified, purchased or collected from a real learner.</p>
+          <p class="demo-note"><svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg><span>Sample reviews are written for this portfolio project. Your own submitted reviews stay in this browser and are also labelled as demo content.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="reviews-layout">
+          <aside class="review-summary" aria-label="Review summary">
+            <span class="eyebrow">Demo rating</span>
+            <div class="review-summary__score">
+              <strong id="review-score">0.0</strong>
+              <span>out of 5</span>
+            </div>
+            <div class="stars" id="review-stars" aria-hidden="true"></div>
+            <p class="review-summary__note" id="review-total">Loading sample reviews…</p>
+
+            <div class="review-summary__divider"></div>
+            <div class="rating-bars" id="rating-bars" aria-label="Rating distribution"></div>
+
+            <div class="review-summary__divider"></div>
+            <p class="review-summary__note"><strong>A note on trust.</strong> These ratings are sample content for a frontend demonstration. They are not aggregated from real course purchases or verified completions.</p>
+            <a class="btn btn--secondary btn--sm" href="#write-review" style="width:100%;margin-top:1.1rem">Write a demo review</a>
+          </aside>
+
+          <div>
+            <div class="reviews-main__head">
+              <div>
+                <h2>All sample reviews</h2>
+                <p class="catalog-count" id="review-count" aria-live="polite" style="margin-top:.25rem">Loading…</p>
+              </div>
+              <div class="review-filters" role="group" aria-label="Filter reviews by rating">
+                <button class="review-filter is-active" type="button" data-review-rating="all" aria-pressed="true">All</button>
+                <button class="review-filter" type="button" data-review-rating="5" aria-pressed="false">5 star</button>
+                <button class="review-filter" type="button" data-review-rating="4" aria-pressed="false">4 star</button>
+                <button class="review-filter" type="button" data-review-rating="3" aria-pressed="false">3 star &amp; below</button>
+              </div>
+            </div>
+
+            <div class="catalog-toolbar" style="margin-bottom:1.25rem">
+              <p class="form-hint">Filter the sample list by course or rating.</p>
+              <div class="catalog-tools">
+                <select class="select select-control" id="review-course-filter" aria-label="Filter reviews by course"></select>
+              </div>
+            </div>
+
+            <div class="reviews-grid" id="review-grid" aria-live="polite"></div>
+
+            <div class="empty-state" id="review-empty" hidden>
+              <span class="empty-state__icon" aria-hidden="true"><svg class="icon"><use href="#i-quote"></use></svg></span>
+              <h3>No sample reviews match those filters</h3>
+              <p>Try another rating or choose a different course. You can also add your own demo review below.</p>
+              <a class="btn btn--primary" href="#write-review">Write a review</a>
+            </div>
+
+            <p class="demo-note"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg><span>Review names, dates and course references are illustrative. A production platform would need purchase verification and moderation.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="write-review">
+      <div class="container">
+        <div class="review-form-wrap">
+          <div>
+            <span class="eyebrow">Add your voice</span>
+            <h2 class="section-title" style="font-size:var(--text-3xl)">Write a demo review</h2>
+            <p class="section-lead" style="margin-top:.8rem">Try the review form to see how validation and local storage work. Your entry will appear in the list above and is stored only in this browser.</p>
+            <ul class="approach-list" style="margin-top:1.5rem">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-lock"></use></svg><span>Nothing is submitted to a server</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg><span>Your entry is labelled “Your demo review”</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-trash"></use></svg><span>Clear site data to remove it</span></li>
+            </ul>
+          </div>
+
+          <div class="review-form-card">
+            <form class="auth-form" id="review-form" novalidate style="margin-top:0">
+              <div class="form-success" id="review-success" role="status" aria-live="polite"></div>
+
+              <div class="form-field" id="review-rating-field">
+                <span class="form-label">Your rating <span class="req" aria-hidden="true">*</span></span>
+                <div class="star-input" role="radiogroup" aria-label="Star rating">
+                  <input type="radio" id="review-rating-5" name="rating" value="5">
+                  <label for="review-rating-5"><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><span class="visually-hidden">5 stars</span></label>
+                  <input type="radio" id="review-rating-4" name="rating" value="4">
+                  <label for="review-rating-4"><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><span class="visually-hidden">4 stars</span></label>
+                  <input type="radio" id="review-rating-3" name="rating" value="3">
+                  <label for="review-rating-3"><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><span class="visually-hidden">3 stars</span></label>
+                  <input type="radio" id="review-rating-2" name="rating" value="2">
+                  <label for="review-rating-2"><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><span class="visually-hidden">2 stars</span></label>
+                  <input type="radio" id="review-rating-1" name="rating" value="1">
+                  <label for="review-rating-1"><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg><span class="visually-hidden">1 star</span></label>
+                </div>
+                <p class="field-error"></p>
+              </div>
+
+              <div class="form-row" style="margin-top:1rem">
+                <div class="form-field">
+                  <label class="form-label" for="review-name">Display name <span class="req" aria-hidden="true">*</span></label>
+                  <input class="input" id="review-name" name="name" type="text" autocomplete="name" placeholder="e.g. Sam R.">
+                  <p class="field-error"></p>
+                </div>
+                <div class="form-field">
+                  <label class="form-label" for="review-course">Course <span class="req" aria-hidden="true">*</span></label>
+                  <div class="select-wrap">
+                    <select class="select" id="review-course" name="course">
+                      <option value="">Choose a course</option>
+                    </select>
+                    <svg class="icon" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+                  </div>
+                  <p class="field-error"></p>
+                </div>
+              </div>
+
+              <div class="form-field" style="margin-top:1rem">
+                <label class="form-label" for="review-title">Review title <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="review-title" name="title" type="text" placeholder="A short summary of your experience">
+                <p class="field-error"></p>
+              </div>
+
+              <div class="form-field" style="margin-top:1rem">
+                <label class="form-label" for="review-text">Your review <span class="req" aria-hidden="true">*</span></label>
+                <textarea class="textarea" id="review-text" name="text" rows="5" placeholder="What did you learn? What was useful or difficult? (At least 20 characters.)"></textarea>
+                <p class="form-hint">Write at least 20 characters. Do not include real personal information.</p>
+                <p class="field-error"></p>
+              </div>
+
+              <button class="btn btn--primary btn--block" type="submit" style="margin-top:1.25rem">Submit demo review</button>
+              <p class="form-hint" style="margin-top:.75rem;text-align:center">Demo only. This review is not verified and is visible only in this browser.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="page-cta">
+          <div>
+            <h2>Read less, try more</h2>
+            <p>Open a course page and use the demo curriculum to see how the work is structured.</p>
+          </div>
+          <div class="page-cta__actions">
+            <a class="btn btn--primary" href="../pages/courses.html">Browse courses</a>
+            <a class="btn btn--ghost" href="../pages/dashboard.html">Open the dashboard</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../js/icons.js"></script>
+  <script src="../js/storage.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/reviews.js"></script>
+  <script src="../js/forms.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

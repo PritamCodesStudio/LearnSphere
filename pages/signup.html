@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create an account — LearnSphere Academy</title>
+  <meta name="description" content="Create a local-only demo account for the LearnSphere Academy frontend project. No real account is created and no email is sent.">
+  <meta name="theme-color" content="#f8f7f4">
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <script>
+    (function(){try{var s=localStorage.getItem('learnsphere.theme');var d=window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.setAttribute('data-theme',s==='dark'||s==='light'?s:(d?'dark':'light'));document.documentElement.classList.add('js');}catch(e){document.documentElement.classList.add('js');}})();
+  </script>
+</head>
+<body data-page="signup" data-root="../">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="auth-section">
+      <div class="container">
+        <div class="auth-layout">
+          <div class="auth-card">
+            <div class="auth-card__head">
+              <span class="eyebrow">Create a demo account</span>
+              <h1>Start with a local profile.</h1>
+              <p>This account is a browser-only demonstration. It gives the dashboard a name and lets the sign-in flow be tested.</p>
+            </div>
+
+            <form class="auth-form" id="signup-form" novalidate>
+              <div class="form-field">
+                <label class="form-label" for="signup-name">Full name</label>
+                <div class="input-wrap">
+                  <svg class="icon" aria-hidden="true"><use href="#i-user"></use></svg>
+                  <input class="input" id="signup-name" name="name" type="text" autocomplete="name" placeholder="Your display name">
+                </div>
+                <p class="field-error"></p>
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="signup-email">Email address</label>
+                <div class="input-wrap">
+                  <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+                  <input class="input" id="signup-email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+                </div>
+                <p class="field-hint">Use a demo email. Nothing is sent or verified.</p>
+                <p class="field-error"></p>
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="signup-password">Password</label>
+                <div class="input-wrap">
+                  <svg class="icon" aria-hidden="true"><use href="#i-lock"></use></svg>
+                  <input class="input input--has-toggle" id="signup-password" name="password" type="password" autocomplete="new-password" placeholder="At least 8 characters">
+                  <button class="password-toggle" type="button" data-password-toggle data-target="signup-password" aria-label="Show password" aria-pressed="false">
+                    <svg class="icon" aria-hidden="true"><use href="#i-eye"></use></svg>
+                  </button>
+                </div>
+                <div class="password-strength" id="signup-strength" data-score="0" aria-live="polite">
+                  <div class="password-strength__bars" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+                  <p class="password-strength__label">Use 8+ characters with a mix of letters, numbers and symbols.</p>
+                </div>
+                <p class="field-error"></p>
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="signup-confirm">Confirm password</label>
+                <div class="input-wrap">
+                  <svg class="icon" aria-hidden="true"><use href="#i-lock"></use></svg>
+                  <input class="input input--has-toggle" id="signup-confirm" name="confirm" type="password" autocomplete="new-password" placeholder="Repeat your password">
+                  <button class="password-toggle" type="button" data-password-toggle data-target="signup-confirm" aria-label="Show password" aria-pressed="false">
+                    <svg class="icon" aria-hidden="true"><use href="#i-eye"></use></svg>
+                  </button>
+                </div>
+                <p class="field-error"></p>
+              </div>
+
+              <div class="form-field" style="margin-top:1.1rem">
+                <label class="checkbox-row" for="signup-terms">
+                  <input id="signup-terms" name="terms" type="checkbox">
+                  <span>I understand this is a frontend demo. My details are stored only in this browser and I should not use a real password.</span>
+                </label>
+                <p class="field-error"></p>
+              </div>
+
+              <button class="btn btn--primary" type="submit">Create demo account <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow-right"></use></svg></button>
+            </form>
+
+            <p class="auth-foot">Already have a demo account? <a href="../pages/login.html">Log in</a></p>
+
+            <div class="auth-note">
+              <svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg>
+              <span>The demo uses a browser-side password hash so the raw password is not written to storage. This is still not secure authentication and must not be used for real accounts.</span>
+            </div>
+          </div>
+
+          <aside class="auth-aside" aria-label="What the demo includes">
+            <div class="auth-aside__brand">
+              <span class="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                  <circle cx="12" cy="12" r="4.1"/>
+                  <ellipse cx="12" cy="12" rx="9.6" ry="4.4" transform="rotate(-24 12 12)"/>
+                  <ellipse cx="12" cy="12" rx="9.6" ry="4.4" transform="rotate(58 12 12)" opacity=".55"/>
+                  <circle cx="20.2" cy="7.4" r="1.4" fill="currentColor" stroke="none"/>
+                </svg>
+              </span>
+              LearnSphere Academy
+            </div>
+
+            <figure class="auth-aside__quote">
+              <blockquote>“Start small enough to begin. Make it real enough to matter.”</blockquote>
+              <figcaption>Sample learning principle · demonstration copy</figcaption>
+            </figure>
+
+            <ul class="approach-list" style="position:relative;z-index:1;margin-top:2rem;color:rgba(255,255,255,.78)">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check-circle"></use></svg><span>Try a dashboard with sample progress</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check-circle"></use></svg><span>Save and favourite courses locally</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check-circle"></use></svg><span>No email, payment or verification</span></li>
+            </ul>
+
+            <div class="auth-aside__stats">
+              <div><strong>100%</strong><span>frontend demo</span></div>
+              <div><strong>0</strong><span>real accounts</span></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../js/icons.js"></script>
+  <script src="../js/storage.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/forms.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

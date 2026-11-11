@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Courses — LearnSphere Academy</title>
+  <meta name="description" content="Browse twelve sample courses in programming, web development, data, AI and design. Search, filter and sort the LearnSphere Academy demo catalogue.">
+  <meta name="theme-color" content="#f8f7f4">
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <script>
+    (function(){try{var s=localStorage.getItem('learnsphere.theme');var d=window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.setAttribute('data-theme',s==='dark'||s==='light'?s:(d?'dark':'light'));document.documentElement.classList.add('js');}catch(e){document.documentElement.classList.add('js');}})();
+  </script>
+</head>
+<body data-page="courses" data-root="../">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero__inner page-hero--split">
+        <div class="page-hero__content">
+          <span class="eyebrow">Course catalogue</span>
+          <h1>Find a course with a clear next step.</h1>
+          <p class="page-hero__lead">Twelve sample courses across programming, data, AI, design and digital foundations. Every course shows its level, structure and practical outcome before you open it.</p>
+          <p class="demo-note"><svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg><span>All courses, prices, ratings and learner counts are sample data for this frontend demonstration.</span></p>
+        </div>
+        <div class="page-hero__aside">
+          <span class="badge badge--neutral">12 demo courses</span>
+          <span class="badge badge--outline">Beginner to advanced</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="catalog">
+          <aside class="filters" id="catalog-filters" aria-label="Filter courses">
+            <div class="filters__head">
+              <h2>Filters</h2>
+              <button class="filters__clear" type="button" data-clear-filters>Reset all</button>
+            </div>
+
+            <div class="filter-group">
+              <h3 id="filter-category">Category</h3>
+              <div class="filter-list" role="group" aria-labelledby="filter-category">
+                <label class="filter-option"><input type="radio" name="category" value="all" checked><span>All courses</span><span class="filter-option__count">12</span></label>
+                <label class="filter-option"><input type="radio" name="category" value="Programming"><span>Programming</span><span class="filter-option__count">4</span></label>
+                <label class="filter-option"><input type="radio" name="category" value="Web Development"><span>Web Development</span><span class="filter-option__count">1</span></label>
+                <label class="filter-option"><input type="radio" name="category" value="Database"><span>Database</span><span class="filter-option__count">1</span></label>
+                <label class="filter-option"><input type="radio" name="category" value="Artificial Intelligence"><span>Artificial Intelligence</span><span class="filter-option__count">1</span></label>
+                <label class="filter-option"><input type="radio" name="category" value="Data Science"><span>Data Science</span><span class="filter-option__count">2</span></label>
+                <label class="filter-option"><input type="radio" name="category" value="Design"><span>Design</span><span class="filter-option__count">2</span></label>
+                <label class="filter-option"><input type="radio" name="category" value="Computer Fundamentals"><span>Computer Fundamentals</span><span class="filter-option__count">1</span></label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h3 id="filter-level">Level</h3>
+              <div class="filter-list" role="group" aria-labelledby="filter-level">
+                <label class="filter-option"><input type="radio" name="level" value="all" checked><span>All levels</span><span class="filter-option__count">12</span></label>
+                <label class="filter-option"><input type="radio" name="level" value="beginner"><span>Beginner</span><span class="filter-option__count">6</span></label>
+                <label class="filter-option"><input type="radio" name="level" value="intermediate"><span>Intermediate</span><span class="filter-option__count">3</span></label>
+                <label class="filter-option"><input type="radio" name="level" value="advanced"><span>Advanced</span><span class="filter-option__count">3</span></label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h3 id="filter-price">Price</h3>
+              <div class="filter-list" role="group" aria-labelledby="filter-price">
+                <label class="filter-option"><input type="radio" name="price" value="all" checked><span>Any price</span><span class="filter-option__count">12</span></label>
+                <label class="filter-option"><input type="radio" name="price" value="under-1000"><span>Under ₹1,000</span><span class="filter-option__count">7</span></label>
+                <label class="filter-option"><input type="radio" name="price" value="1000-1999"><span>₹1,000 – ₹1,999</span><span class="filter-option__count">4</span></label>
+                <label class="filter-option"><input type="radio" name="price" value="2000-plus"><span>₹2,000 and above</span><span class="filter-option__count">1</span></label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <p class="form-hint">Filters update the URL so you can share a catalogue view. Prices are sample amounts in Indian rupees.</p>
+            </div>
+          </aside>
+
+          <div>
+            <div class="catalog-toolbar">
+              <p class="catalog-count" id="course-count" aria-live="polite">Loading sample courses…</p>
+              <div class="catalog-tools">
+                <button class="btn btn--secondary btn--sm filters-toggle" type="button" aria-expanded="false" aria-controls="catalog-filters">
+                  <svg class="icon" aria-hidden="true"><use href="#i-filter"></use></svg>
+                  Filters
+                </button>
+                <label class="search-box" for="course-search">
+                  <svg class="icon" aria-hidden="true"><use href="#i-search"></use></svg>
+                  <input class="input" id="course-search" type="search" placeholder="Search courses or instructors" autocomplete="off" aria-label="Search courses">
+                </label>
+                <select class="select select-control" id="course-sort" aria-label="Sort courses">
+                  <option value="popularity">Most popular</option>
+                  <option value="rating">Highest rated</option>
+                  <option value="price-low">Price: low to high</option>
+                  <option value="price-high">Price: high to low</option>
+                  <option value="title">Title: A to Z</option>
+                </select>
+                <div class="view-toggle" role="group" aria-label="Catalogue view">
+                  <button type="button" data-view="grid" class="is-active" aria-pressed="true" aria-label="Grid view">
+                    <svg class="icon" aria-hidden="true"><use href="#i-grid"></use></svg>
+                  </button>
+                  <button type="button" data-view="list" aria-pressed="false" aria-label="List view">
+                    <svg class="icon" aria-hidden="true"><use href="#i-list"></use></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="visually-hidden">Course results</h2>
+            <div class="course-grid" id="course-grid" aria-live="polite">
+              <noscript><p class="notice">JavaScript is needed to render the sample catalogue. You can still explore the <a href="../index.html">home page</a>.</p></noscript>
+            </div>
+
+            <div class="empty-state" id="course-empty" hidden>
+              <span class="empty-state__icon" aria-hidden="true"><svg class="icon"><use href="#i-search"></use></svg></span>
+              <h3>No courses match those filters</h3>
+              <p>Try a broader search, choose another category, or reset the filters to browse all twelve sample courses.</p>
+              <button class="btn btn--primary" type="button" data-clear-filters>Clear all filters</button>
+            </div>
+
+            <p class="demo-note"><svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg><span>Course cards, quick-view panels and enrollment actions are demonstration features. Nothing is purchased or issued.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint section--tight">
+      <div class="container">
+        <div class="page-cta">
+          <div>
+            <h2>Not sure which course fits?</h2>
+            <p>Tell us what you want to learn and we will point you to a comfortable starting point.</p>
+          </div>
+          <div class="page-cta__actions">
+            <a class="btn btn--primary" href="../pages/contact.html">Ask the team</a>
+            <a class="btn btn--ghost" href="../pages/experience.html">See how learning works</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../js/icons.js"></script>
+  <script src="../js/storage.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/courses.js"></script>
+  <script src="../js/forms.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
